@@ -5,6 +5,3 @@ services:
 
 before_install:
     - docker build -t firassh/docker-react -f Dockerfile.dev .
-
-script:
-    - docker run firassh/docker-react npm run test -- --coverage
